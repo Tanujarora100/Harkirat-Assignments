@@ -1,13 +1,13 @@
 import './App.css';
 
-import Input from "./Input.tsx";
+import {Assignment1} from "./useMemo/Assignment1.tsx";
 
 function App() {
 
 
     return (
         <div>
-        <Input></Input>
+        <Assignment1 ></Assignment1>
         </div>
     );
 }
