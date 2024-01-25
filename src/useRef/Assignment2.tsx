@@ -20,7 +20,7 @@ export function Assignment2() {
 
     return (
         <div>
-            <p style={{color: "red"}}>This component has rendered {renderCycles.current} times.</p>
+            <p style={{color: "red"}}>This componeccd has rendered {renderCycles.current} times.</p>
             <button style={{borderRadius: "10px"}} onClick={handleReRender}>Force Re-render</button>
         </div>
     );
