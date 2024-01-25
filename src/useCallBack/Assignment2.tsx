@@ -18,7 +18,7 @@ export function Assignment2() {
     // }
 
     const showAlert = useCallback(() => {
-            alert(inputText);
+        alert(inputText);
 
     }, [inputText]);
 

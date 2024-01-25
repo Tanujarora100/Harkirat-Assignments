@@ -8,7 +8,7 @@ export function Assignment1() {
         if (inputRef.current) {
             inputRef.current.focus();
         }
-    }, []);
+    }, [inputRef]);
 
     const handleButtonClick = () => {
         if (inputRef.current) {
