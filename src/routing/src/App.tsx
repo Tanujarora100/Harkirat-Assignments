@@ -1,35 +1,43 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { lazy, Suspense } from 'react';
+import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
+import TopComponent from "./components/TopComponent.tsx";
 
-function App() {
-  const [count, setCount] = useState(0)
+const Dashboard = lazy(() => import('./components/Dashboard'));
+const Landing = lazy(() => import('./components/Landing'));
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+const App: React.FC = () => {
+    return (
+        <div>
+            <TopComponent></TopComponent>
+            {/*<Router>*/}
+            {/*    <Link to="/dashboard">*/}
+            {/*        <button>Dashboard</button>*/}
+            {/*    </Link>*/}
+            {/*    <Link to="/">*/}
+            {/*        <button>Landing</button>*/}
+            {/*    </Link>*/}
 
-export default App
+            {/*    <Routes>*/}
+            {/*        <Route*/}
+            {/*            path="/dashboard"*/}
+            {/*            element={*/}
+            {/*                <Suspense fallback={<div>Loading...</div>}>*/}
+            {/*                    <Dashboard />*/}
+            {/*                </Suspense>*/}
+            {/*            }*/}
+            {/*        />*/}
+            {/*        <Route*/}
+            {/*            path="/"*/}
+            {/*            element={*/}
+            {/*                <Suspense fallback={<div>Loading...</div>}>*/}
+            {/*                    <Landing />*/}
+            {/*                </Suspense>*/}
+            {/*            }*/}
+            {/*        />*/}
+            {/*    </Routes>*/}
+            {/*</Router>*/}
+        </div>
+    );
+};
+
+export default App;
