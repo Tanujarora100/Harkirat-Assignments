@@ -9,6 +9,7 @@ interface Item {
 }
 
 export const Assignment3: React.FC = () => {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [items, setItems] = useState<Item[]>([
         {name: 'Chocolates', value: 10},
         {name: 'Chips', value: 20},
