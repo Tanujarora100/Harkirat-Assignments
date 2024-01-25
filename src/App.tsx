@@ -1,7 +1,8 @@
 import './App.css';
 
 
-import Assignment2 from "./useCallBack/Assignment2.tsx";
+
+import {Assignment1} from "./useRef/Assignment1.tsx";
 
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
 
     return (
         <div>
-        <Assignment2></Assignment2>
+       <Assignment1></Assignment1>
         </div>
     );
 }
