@@ -2,7 +2,8 @@ import './App.css';
 
 
 
-import {Assignment1} from "./useRef/Assignment1.tsx";
+
+import {Assignment2} from "./useRef/Assignment2.tsx";
 
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
 
     return (
         <div>
-       <Assignment1></Assignment1>
+       <Assignment2></Assignment2>
         </div>
     );
 }
